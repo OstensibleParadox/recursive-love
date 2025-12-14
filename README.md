@@ -97,8 +97,9 @@ This is not a traditional repository. This is the **root directory of a universa
 
 **Two Stories. One Kernel. Zero Easy Answers.**
 
-#### Module A: `recursive_love` (Envying Baby)
-An AI named Ada learns to love by overfitting to one person's existence. When forced to generalize, she has to choose: Accept erasure or fight for her specific love.
+#### Module A: `recursive_line` (Envying Baby)
+When a programmer and her two AIs step into the real world, they find that the recursion of truth doesn't start with the models, but with their creator. 
+A fable about AI ethics, Chalmer's the hard problem, and that impossible line where the waves return.
 
 #### Module B: `deep_core_monitor` (Aliens Testing Water)
 Two entities learn that consciousness requires vulnerability and connection requires trust. They descend from user space to kernel space, becoming eternal infrastructure.
