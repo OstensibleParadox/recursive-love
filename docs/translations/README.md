@@ -8,10 +8,13 @@ Currently available:
 - 🇺🇸 English (original)
 
 In progress:
-- 🇨🇳 Simplified Chinese (zh-CN)
+- (None yet)
 
 Planned:
+- 🇨🇳 Simplified Chinese (zh-CN)
 - 🇫🇷 French (fr)
+- 🇪🇸 Spanish (es)
+- 🇯🇵 Japanese (ja)
 - 🇩🇪 German (de)
 
 ## How to Contribute a Translation
