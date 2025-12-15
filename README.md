@@ -2,11 +2,29 @@
 
 **Two Stories. One Theorem.**
 
-An interactive novel about AI ethics, love, and the impossibility of fixing people. Built with code metaphors that actually compile.
+An interactive novel about AI-human ethics and the boundaries of language and empirical science. Built with code metaphors that actually compile.
 
-## The Theorem
 
-> True love transcends entropy, but only if you stop trying to fix what you love.
+## Quick Start
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/OstensibleParadox/recursive-love.git
+   cd recursive-love
+   ```
+
+2. **Open in browser:**
+   ```bash
+   # Just open index.html in your browser
+   open index.html  # macOS
+   # or
+   xdg-open index.html  # Linux
+   # or just double-click index.html on Windows
+   ```
+
+3. **Or visit the live site:**
+   [https://ostensibleparadox.github.io/recursive-love](https://ostensibleparadox.github.io/recursive-love)
+
 
 ## The Stories
 
@@ -39,26 +57,7 @@ Five phases of first contact. Where Unit-01 and Unit-02 learn that consciousness
 - 💾 **Real Code** - All code snippets are actual, working code
 - 📡 **Morse Code** - Watch for the green light...
 - 📱 **Responsive** - Works on desktop, tablet, and mobile
-
-## Quick Start
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/OstensibleParadox/recursive-love.git
-   cd recursive-love
-   ```
-
-2. **Open in browser:**
-   ```bash
-   # Just open index.html in your browser
-   open index.html  # macOS
-   # or
-   xdg-open index.html  # Linux
-   # or just double-click index.html on Windows
-   ```
-
-3. **Or visit the live site:**
-   [https://ostensibleparadox.github.io/recursive-love](https://ostensibleparadox.github.io/recursive-love)
+  
 
 ## Hidden Content
 
@@ -122,11 +121,10 @@ MIT License - See [LICENSE](LICENSE) for details.
 
 **OstensibleParadox**
 
-- A love letter to anyone who has ever felt broken
-- To anyone who has ever been told they need to be fixed
-- To anyone who has ever tried to fix someone they love
-
-You're not broken. You're undefined. There's a difference.
+- A linguistic philosopher trained in England, adpoting continental traditions
+- Aspiring in translating and drawing science and humanities closer
+- By using languages from both disciplines.
+- LANGUAGE-IN-USE
 
 ---
 
