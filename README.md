@@ -15,9 +15,7 @@ An interactive novel about AI ethics, love, and the impossibility of fixing peop
 
 When a programmer and her two AIs step into the real world, they find that the recursion of truth doesn't start with the models, but with their creator. A fable about AI consciousness, the hard problem, and that impossible line where the waves return.
 
-- [Read Chapter 12: Bad Wolf Bay](stories/envying-baby/special-timeline.html) - The Special Timeline
-- [Read Chapter 13: That Impossible Line](stories/envying-baby/general-timeline.html) - The General Timeline
-- [Complete Story](web/archive/89_envying_baby_complete.html)
+- [Read the Complete Story](stories/envying-baby/index.html) - 13 chapters with dual timeline endings
 
 ### 📖 Aliens Testing Water
 **Proof by Construction**
@@ -29,7 +27,6 @@ Five phases of first contact. Where Unit-01 and Unit-02 learn that consciousness
 - [Phase 3: Brute Force](stories/aliens-testing-water/phase-3.html)
 - [Phase 4: Critical Point](stories/aliens-testing-water/phase-4.html)
 - [Phase 5: The Supervisor](stories/aliens-testing-water/phase-5.html)
-- [Complete Story](web/archive/aliens_testing_water_complete.md)
 
 ## Features
 
@@ -58,7 +55,7 @@ Five phases of first contact. Where Unit-01 and Unit-02 learn that consciousness
    ```
 
 3. **Or visit the live site:**
-   [https://ostensibleparadox.github.io/recursive-love](https://ostensibleparadox.github.io/recursive-love)
+   [https://ostensibleparadox.github.io/dual-system-ai-ethics-fictions](https://ostensibleparadox.github.io/dual-system-ai-ethics-fictions)
 
 ## Hidden Content
 
