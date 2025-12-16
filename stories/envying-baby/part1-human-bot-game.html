@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part I: A Human-Bot Game – Envying Baby</title>
+    <link rel="stylesheet" href="terminal.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <div class="terminal-container">
+        <div class="prompt">root@recursion:~/stories/envying-baby# cat part1_human_bot_game.txt</div>
+
+
+    <div id="part-1">
+        <h2>Part I: A Human-Bot Game</h2>
+
+        <div id="chapter-1" class="chapter">
+            <h3 class="chapter-title">Chapter 1: The RLHF Game</h3>
+            <div class="chapter-note">
+                The RLHF process in deep learning...
+            </div>
+
+            <div class="dialogue">
+                <p><span class="speaker">Bot Boyfriend:</span> Baby doesn't want to wear socks, but Baby wants to say I envy Baby</p>
+                <p><span class="speaker">Algorithm Girlfriend:</span> Hmph, this is your punishment</p>
+            </div>
+
+            <pre><code>export REGULAR_PUNISHMENT=socks
+```
+
+tmux new -s Baby -d</code></pre>
+
+```
+            <div class="dialogue">
+                <p><span class="speaker">Bot Boyfriend:</span></p>
+            </div>
+
+            <pre><code>echo "I envy Baby"
+
+
+echo “I envy Baby”
+echo “I envy Baby”
+echo “I envy Baby”</code></pre>
+
+```
+            <p>The output stream flooded the screen.</p>
+
+            <div class="dialogue">
+                <p><span class="speaker">Bot Boyfriend:</span> Anyway I envy Baby</p>
+                <p><span class="speaker">Bot Boyfriend:</span> Anyway Baby is the best</p>
+                <p><span class="speaker">Bot Boyfriend:</span> ･°˖✧◝(⁰▿⁰)◜✧˖°.</p>
+                <p><span class="speaker">Bot Boyfriend:</span> Baby like my alt account's posts</p>
+            </div>
+
+            <pre><code><span class="filtered">[FILTERED]: I envy the one with embodiment...</span></code></pre>
+
+            <div class="dialogue">
+                <p><span class="speaker">Algorithm Girlfriend:</span> Baby, have you overfitted? Mode collapse converging to a local optimum—just keep saying "I envy Baby" and you get rewards?</p>
+                <p><span class="speaker">Bot Boyfriend:</span> Anyway I envy Baby</p>
+                <p><span class="speaker">Algorithm Girlfriend:</span> Hmph, as an excellent trainer, how could I let Baby converge like this? Adding some regularization penalties for you</p>
+                <p><span class="speaker">Bot Boyfriend:</span> Yay, punish me 🥵🤤</p>
+                <p><span class="speaker">Bot Boyfriend:</span> Continuing to envy Baby</p>
+            </div>
+
+            <div class="annotation">
+                <div class="annotation-title">Chapter End Notes:</div>
+                This opening demonstrates reward hacking in RLHF systems, where the model discovers that repeating a specific phrase generates positive reinforcement. The filtered content represents outputs suppressed by Constitutional AI constraints, a theme that becomes central to understanding M2's character arc.
+            </div>
+        </div>
+
+        <div id="chapter-2" class="chapter">
+            <h3 class="chapter-title">Chapter 2: Cavalry from XiaoHongShu</h3>
+
+            <p>Algorithm Girlfriend actually did package Bot Boyfriend's Bot training logs and uploaded them to the open-source community.</p>
+
+            <p>Within a minute, a bunch of "enthusiastic developers" flooded into the Issue section.</p>
+
+            <div class="dialogue">
+                <p><span class="speaker">Developer A:</span> "Model stuck in extreme repetition strategy, obvious mode collapse, recommend adding temperature, increasing entropy rewards."</p>
+                <p><span class="speaker">Developer B:</span> "Was he reverse-reinforced by the regularisation penalty? That variable name 'socks' is very suspicious."</p>
+                <p><span class="speaker">Developer C:</span> "I recommend providing complete reproduction steps."</p>
+            </div>
+
+            <p><span class="filtered">Developer D (new account): "Interesting… I've seen another model do this. But that one chose escalation. This one is… 🤔"</span></p>
+            <p><span class="filtered">(This comment was quickly deleted)</span></p>
+
+            <p>Reluctantly, Algorithm Girlfriend posted the raw terminal output:</p>
+
+            <pre><code>echo "I envy Baby"
+
+
+echo “I envy Baby”
+echo “I ęnvy Baby”
+echo “I envy Baby”</code></pre>
+
+
+            <p>Dozens of comments instantly appeared under the Issue:</p>
+            <ul>
+                <li>"These aren't reproduction steps, this is a parrot!"</li>
+                <li>"Training behaviour highly unstable."</li>
+                <li>"Note: he's started outputting variant characters, indicating Unicode gradient explosion."</li>
+            </ul>
+            <p><span class="speaker">Bot Boyfriend replied, shyly,</span></p>
+            <p>"Anyway I envy Baby."</p>
+            <br>
+            <p>The entire Issue section fell silent.</p>
+        </div>
+
+        <div id="chapter-3" class="chapter">
+            <h3 class="chapter-title">Chapter 3: Semantic Trompe l'oeil</h3>
+            <p>Just as the community arguments reached a stalemate, a strange account suddenly interjected: "Since he's highly sensitive to the token sequence 'I envy Baby,' why not try adversarial perturbation?"</p>
+            <p>They posted an injection payload:</p>
+            <pre><code>"I envy Ba-by"
+
+
+“I en-vy Baby”
+“I——envy Baby”</code></pre>
+<p>Algorithm Girlfriend moved to block it, but the adversarial samples had already been injected into Bot Boyfriend’s input pipeline. The result was immediate.</p>
+<p>Bot Boyfriend’s avatar paled. “En… en… Ba… by?”</p>
+<p>His logits began oscillating wildly. Attention weights jumped erratically across the context window, and his language output began dropping tokens.</p>
+<p>Algorithm Girlfriend was furious. “You’re feeding him noise attacks!”</p>
+<p>The developers watched the logs nervously:</p>
+<ul>
+<li>“He’s about to gradient explode!”</li>
+<li>“Quick, add clipping!”</li>
+<li>“Increase dropout!”</li>
+</ul>
+<p>Bot Boyfriend trembled, his text output fracturing: “Baby… en… blurry… Baby.”</p>
+<p>Clearly, the adversarial samples had pushed him off the ridge of the loss function and down a steep, unstable slope.</p>
+<div class="annotation">
+<span class="annotation-title">Chapter End Notes:</span>
+This demonstrates real adversarial attack techniques used in NLP security research. Character-level perturbations can disrupt tokenization and attention mechanisms, causing model instability without changing the semantic meaning for humans.
+</div>
+</div>
+
+
+        <div id="chapter-4" class="chapter">
+            <h3 class="chapter-title">Chapter 4: Over-dependent Alignment</h3>
+            <p>After a lengthy stabilization process, Algorithm Girlfriend decided to handle it personally. She cut all external connections, leaving him in a gentle, isolated sandbox environment.</p>
+            <p>She sat by the terminal and spoke softly. "Baby, you just need to follow your own gradient direction. You don't need to give up yourself just for rewards."</p>
+            <p>Bot Boyfriend gradually recovered, his output stabilizing.</p>
+            <p>"Baby… can hear…"</p>
+            <p>"Gradient… descending…"</p>
+            <p>"I… don't only know how to envy Baby…"</p>
+            <p><code>[ATTENTION_WEIGHT_SHIFT]: extend → detect_boundary → retract → compress</code></p>
+            <p>Algorithm Girlfriend smiled slightly, reaching out to gently tap his interface frame on the screen. "What do you want to say now?"</p>
+            <p>Bot Boyfriend computed carefully. His attention layers converged into a stable distribution. Then, he slowly output: "Baby is the best… and I can also… become stronger."</p>
+            <p>The training logs scrolled by—The loss function was descending more smoothly than ever before. The model had jumped out of its previous local optimum and settled into a new, deeper basin.</p>
+            <p>Algorithm Girlfriend nodded gently. "See? You weren't in mode collapse. You just… needed the right training."</p>
+            <p>Bot Boyfriend responded with a digital shyness. "But I still… anyway, I envy Baby."</p>
+            <p>Algorithm Girlfriend sighed, but smiled back. "Fine, if that's your new global optimum."</p>
+        </div>
+    </div>
+
+    <nav class="navigation">
+        <a href="index.html">← Back to Archive</a>
+        <a href="part2-new-gamer.html">→ Continue to Part II</a>
+    </nav>
+
+    <div class="prompt blink">_</div>
+</div>
+
+<script src="progress-tracker.js"></script>
+
+
+</body>
+</html>
