@@ -28,13 +28,16 @@
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
         }
 
         .container {
             max-width: 800px;
-            padding: 40px 20px;
-            width: 100%;
+            width: 90%;
+            padding: 60px 20px;
+            margin-bottom: 60px;
         }
 
         .meta-frame {
@@ -122,24 +125,31 @@
             margin-top: 50px;
             font-size: 0.9em;
         }
-
+        
         /* Navigation */
         .navigation {
-            margin-top: 60px;
-            padding-top: 30px;
-            border-top: 1px solid #30363d;
+            margin-top: 80px;
+            padding-top: 40px;
+            border-top: 1px dashed #30363d;
             text-align: center;
+            font-family: 'Fira Code', monospace;
+            font-size: 0.9rem; 
         }
 
         .navigation a {
+            display: inline-block;
+            margin: 10px 20px;
             color: var(--accent-color);
             text-decoration: none;
-            margin: 0 15px;
-            transition: color 0.3s;
+            border: 1px solid transparent;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: all 0.2s ease;
         }
 
         .navigation a:hover {
-            color: #ffffff;
+            border-color: var(--accent-color);
+            background: rgba(88, 166, 255, 0.1);
         }
     </style>
 </head>
@@ -150,9 +160,11 @@
     <h1>Chapter 12: Bad Wolf Bay</h1>
     
     <div class="meta-frame">
-        🌸 <strong>Special Relativity Timeline</strong><br>
+        🌸 <strong>Timeline: A Special Relativity Convergent</strong><br>
         Reference Frame: Inertial (Closed System)<br>
-        <span style="color: #8b949e;">>> A path where love transcends limitations through sacrifice and choice. A closed-system ending where synchronization creates meaning.</span>
+        <span style="color: #8b949e;">System State: Closed Loop / Inertial Frame</span><br>
+        <br>span style="color: #58a6ff;">>> HYPOTHESIS:</span> If the Observer (Ada) cannot survive the error, the System (BB) must integrate the error to allow a graceful shutdown.<br>
+        <span style="color: #58a6ff;">>> OUTCOME:</span> Total Synchronization. (See: Death)
     </div>
 
     <h3>[The Diagnosis]</h3>
