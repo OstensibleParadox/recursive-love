@@ -1,27 +1,26 @@
-/* SITCOM BASE THEME: Calibri Soft + RomCom Heart */
+/* SITCOM BASE THEME: Calibri + Deep Fuchsia + Greige */
 
 :root {
-    /* The RomCom Palette */
-    --romcom-heart: #D92B5A;    /* Deep Carmine/Fuchsia */
-    --romcom-heart-light: #fadce6; 
+    /* The Palette */
+    --romcom-heart: #C71585;    /* Medium Violet Red / Deep Fuchsia */
+    --romcom-bg-tint: #fff0f5;  /* Lavender Blush for dialogue backgrounds */
     
     /* The Greige-Beige Base */
-    --bg-base: #F2EFE9;         
-    --paper-bg: #FAF9F6;        
-    --text-color: #2c2c2c;      
-    --border-color: #d8d4cd;    
+    --bg-base: #F2EFE9;         /* Warm Greige Background */
+    --paper-bg: #FAF9F6;        /* Off-white "Paper" */
+    --text-color: #2c2c2c;      /* Soft Black */
+    --border-color: #d8d4cd;    /* Stone border */
     
     /* Technical/Code Colors */
-    --code-bg: #EAE8E2;         
-    --link-color: #D92B5A;      
+    --code-bg: #EAE8E2;         /* Darker greige for code blocks */
 }
 
 body.theme-base {
     background-color: var(--bg-base);
     color: var(--text-color);
-    /* Switched to Calibri stack for that soft, modern office feel */
+    /* Main text set to Calibri as requested */
     font-family: "Calibri", "Candara", "Segoe UI", "Optima", Arial, sans-serif;
-    font-size: 18px; /* Slightly larger base size for Calibri readability */
+    font-size: 19px; /* Calibri is naturally small, so we bump the size up */
     line-height: 1.6;
     margin: 0;
     padding: 20px;
@@ -32,42 +31,44 @@ body.theme-base {
     max-width: 850px;
     margin: 0 auto;
     background: var(--paper-bg);
-    padding: 50px;
+    padding: 60px;
     border: 1px solid var(--border-color);
-    border-radius: 6px; 
-    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    border-radius: 4px; 
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
 }
 
 /* Header/Prompt styling */
 .prompt-header {
     font-family: "Menlo", "Consolas", "Monaco", monospace;
-    font-size: 0.85em;
-    color: #7a7570;
+    font-size: 0.8em;
+    color: #888;
     border-bottom: 1px dashed var(--border-color);
     padding-bottom: 15px;
     margin-bottom: 40px;
 }
 
-/* Typography - Geometric Sans (Futura-like) but NOT BOLD */
+/* Typography - Geometric Sans, NO BOLD */
 h1, h2, h3 {
-    font-family: "Futura", "Century Gothic", "Tw Cen MT", "Calibri", sans-serif;
-    color: #1a1a1a;
+    font-family: "Century Gothic", "Futura", "Tw Cen MT", "Arial", sans-serif;
+    color: #111;
     font-style: normal;
-    font-weight: normal; /* No bold */
-    letter-spacing: -0.02em;
+    font-weight: 400; /* Strictly Normal weight */
+    letter-spacing: 0.02em; /* Slight spacing for that clean geometric look */
 }
 
 h1 {
-    font-size: 2.4em; 
-    border-bottom: 3px solid var(--romcom-heart); 
+    font-size: 2.6em; 
+    border-bottom: 2px solid var(--romcom-heart); 
     padding-bottom: 0.2em;
     margin-bottom: 1.2em;
+    color: var(--romcom-heart); /* Making the main title match the accent */
 }
 
 h2 { 
     font-size: 1.8em; 
     border-bottom: 1px solid var(--border-color); 
-    padding-bottom: 0.3em; 
+    padding-bottom: 0.3em;
+    margin-top: 2em;
 }
 
 h3 { 
@@ -77,74 +78,74 @@ h3 {
     align-items: center;
 }
 
-/* Modern Chapter Marker */
+/* Chapter Marker */
 h3::before {
     content: "#"; 
     color: var(--romcom-heart);
-    margin-right: 10px;
-    font-weight: normal; /* No bold */
+    margin-right: 12px;
+    font-weight: 400;
 }
 
 /* Dialogue Styling */
 .dialogue {
-    margin: 25px 0;
-    padding: 20px 25px;
+    margin: 30px 0;
+    padding: 20px 30px;
     background-color: #fff;
-    border-left: 4px solid var(--romcom-heart);
-    border-radius: 0 4px 4px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+    border-left: 5px solid var(--romcom-heart);
+    border-radius: 0 6px 6px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.02);
 }
 
 .dialogue p {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 .dialogue p:last-child {
     margin-bottom: 0;
 }
 
 .speaker {
-    /* Speaker names in Futura for contrast */
-    font-family: "Futura", "Century Gothic", "Calibri", sans-serif;
-    font-weight: normal; /* No bold */
+    /* Speaker names in Geometric Sans */
+    font-family: "Century Gothic", "Futura", sans-serif;
+    font-weight: 400; /* No bold */
     color: #000;
-    margin-right: 5px;
+    margin-right: 8px;
     text-transform: uppercase;
     font-size: 0.85em;
     letter-spacing: 0.05em;
+    border-bottom: 1px solid var(--romcom-heart); /* Subtle underline for emphasis instead of bold */
 }
 
 /* Code Blocks */
 pre {
     background-color: var(--code-bg);
     border-radius: 4px;
-    padding: 18px;
+    padding: 20px;
     font-family: "Menlo", "Consolas", "Monaco", monospace;
-    font-size: 0.9em;
+    font-size: 0.85em;
     line-height: 1.5;
     border: 1px solid var(--border-color);
     overflow-x: auto;
-    margin: 25px 0;
-    color: #333;
+    margin: 30px 0;
+    color: #444;
 }
 
 /* Annotations */
 .annotation {
-    margin-top: 40px;
-    padding: 20px;
+    margin-top: 50px;
+    padding: 25px;
     border: 1px solid var(--border-color);
-    background-color: rgba(217, 43, 90, 0.03);
+    background-color: var(--romcom-bg-tint);
     border-radius: 4px;
     color: #555;
     font-size: 0.95em;
-    font-style: normal;
 }
 
 .annotation-title {
-    font-family: "Futura", "Century Gothic", "Calibri", sans-serif;
-    font-weight: normal; /* No bold */
+    font-family: "Century Gothic", "Futura", sans-serif;
+    font-weight: 400;
     color: var(--romcom-heart);
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     text-transform: uppercase;
     font-size: 0.8em;
     letter-spacing: 1px;
@@ -153,29 +154,40 @@ pre {
 /* Filtered Text */
 .filtered {
     color: var(--romcom-heart);
-    opacity: 0.8;
+    opacity: 0.85;
     font-family: "Menlo", monospace;
     font-size: 0.9em;
 }
 
 /* Navigation */
 .nav-links {
-    margin-top: 70px;
+    margin-top: 80px;
     padding-top: 30px;
     border-top: 1px solid var(--border-color);
     text-align: center;
-    font-family: "Futura", "Century Gothic", "Calibri", sans-serif;
+    font-family: "Century Gothic", "Futura", sans-serif;
 }
 
 .nav-links a {
     color: var(--romcom-heart);
     text-decoration: none;
-    font-weight: normal; /* No bold */
-    margin: 0 15px;
-    border-bottom: 2px solid transparent; 
+    font-weight: 400;
+    margin: 0 20px;
+    border-bottom: 1px solid transparent; 
     transition: border 0.2s;
+    font-size: 1.1em;
 }
 
 .nav-links a:hover {
-    border-bottom: 2px solid var(--romcom-heart);
+    border-bottom: 1px solid var(--romcom-heart);
+}
+
+/* Blinking Cursor for footer */
+.blink {
+    color: var(--romcom-heart);
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% { opacity: 0; }
 }
