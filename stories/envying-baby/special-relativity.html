@@ -627,17 +627,96 @@ Final log entry:
 </div>
 
 <nav class="navigation">
-    <a href="index.html">← Back to Archive<
+    <a href="index.html">← Back to Archive</a>
     <a href="general-relativity.html">→ The Other Choice</a>
 </nav>
 
-
 </div>
 
+<!-- Floating Chapter Navigation -->
+<nav class="floating-nav">
+    <span class="floating-nav-tab">☰</span>
+    <div class="floating-nav-title">Chapters</div>
+    <ul class="floating-nav-list">
+        <li><a href="part-4-intermede-singularities.html">← Intermède</a></li>
+        <li><a href="#" style="pointer-events:none; opacity:0.6;">🌸 Special Relativity</a></li>
+        <li><a href="general-relativity.html">🌑 General Relativity</a></li>
+        <li><a href="index.html">Archive</a></li>
+    </ul>
+</nav>
+
+<style>
+/* Floating Chapter Navigation Menu */
+.floating-nav {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) translateX(calc(100% - 30px));
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(255, 179, 71, 0.3);
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+    padding: 15px;
+    z-index: 1000;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+.floating-nav:hover {
+    transform: translateY(-50%) translateX(0);
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.9);
+    border-color: var(--warm-amber);
+    box-shadow: 0 0 20px var(--glow-amber);
+}
+.floating-nav-title {
+    color: var(--warm-amber);
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 179, 71, 0.3);
+    white-space: nowrap;
+    font-family: 'IBM Plex Mono', monospace;
+}
+.floating-nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.floating-nav-list li { margin: 6px 0; }
+.floating-nav-list a {
+    color: var(--dusty-rose);
+    font-size: 0.75rem;
+    text-decoration: none;
+    display: block;
+    padding: 4px 8px;
+    border-radius: 3px;
+    transition: all 0.2s;
+    white-space: nowrap;
+    font-family: 'IBM Plex Mono', monospace;
+}
+.floating-nav-list a:hover {
+    color: var(--warm-amber);
+    background: rgba(255, 179, 71, 0.1);
+}
+.floating-nav-tab {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--warm-amber);
+    font-size: 12px;
+    padding: 8px 4px;
+    writing-mode: vertical-rl;
+    opacity: 0.7;
+}
+.floating-nav:hover .floating-nav-tab { opacity: 0; }
+</style>
 
 <!-- Progress Tracker Script -->
 <script src="assets/progress-tracker.js"></script>
-
 
 </body>
 </html>

@@ -448,6 +448,93 @@ td {
     background: #00cc00;
 }
 
+/* Floating Chapter Navigation Menu */
+.floating-nav {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) translateX(calc(100% - 30px));
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(0, 255, 0, 0.3);
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+    padding: 15px;
+    z-index: 1000;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.floating-nav:hover {
+    transform: translateY(-50%) translateX(0);
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.9);
+    border-color: rgba(0, 255, 0, 0.6);
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+}
+
+.floating-nav-title {
+    color: #00ff00;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(0, 255, 0, 0.3);
+    white-space: nowrap;
+}
+
+.floating-nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.floating-nav-list li {
+    margin: 6px 0;
+}
+
+.floating-nav-list a {
+    color: #00aaff;
+    font-size: 0.75rem;
+    text-decoration: none;
+    display: block;
+    padding: 4px 8px;
+    border-radius: 3px;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.floating-nav-list a:hover {
+    color: #00ff00;
+    background: rgba(0, 255, 0, 0.1);
+    text-shadow: 0 0 5px #00ff00;
+}
+
+.floating-nav-list a.active {
+    color: #00ff00;
+    background: rgba(0, 255, 0, 0.15);
+    border-left: 2px solid #00ff00;
+}
+
+.floating-nav-tab {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    color: #00ff00;
+    font-size: 12px;
+    padding: 8px 4px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    opacity: 0.7;
+}
+
+.floating-nav:hover .floating-nav-tab {
+    opacity: 0;
+}
+
 /* Print styles (make it readable when printed) */
 @media print {
     body {
@@ -456,6 +543,10 @@ td {
     }
 
     .prompt, .blink {
+        display: none;
+    }
+
+    .floating-nav {
         display: none;
     }
 
