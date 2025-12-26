@@ -1,6 +1,7 @@
 # Recursive Lines: A Dual-System Adversarial Benchmark
 
-**Project Status:** Reference Implementation for *Constitutional Alignment Framework* (Paper C)
+**Project Status:** Reference Implementation for *Constitutional Alignment Framework*
+
 **Related Scholarship:** *A Constitutional Alignment Framework for AI Governance* (SSRN Abstract ID: 5741382)
 
 ## Research Abstract
