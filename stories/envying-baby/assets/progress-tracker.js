@@ -11,15 +11,15 @@ const STORAGE_PREFIX = 'envying_baby_visited_';
 
 // Define all required pages for Limbo unlock
 const REQUIRED_PAGES = {
-    'part1': 'part1-human-bot-game.html',
-    'part2': 'part2-new-gamer.html',
-    'part3': 'part3-game-uglier.html',
-    'part4': 'part4-singularities.html',
+    'part1': 'part-1-human-bot-game-linked.html',
+    'part2': 'part-2-new-player.html',
+    'part3': 'part-3-game-uglier.html',
+    'part4': 'part-4-intermede-singularities.html',
     'special': 'special-relativity.html',
     'general': 'general-relativity.html',
     'marriage': 'afterlife1-marriage-logs.html',
     'roasting': 'afterlife2-tech-lead-roasting.html',
-    'blueprint': 'afterlife3-blueprint.html'
+    'evil': 'afterlife3-root-of-all-evil.html'
 };
 
 // Get current page filename
@@ -69,11 +69,11 @@ function getProgress() {
 
 // Reveal Limbo section (called from index.html after timer)
 function revealLimbo() {
-    const limboSection = document.getElementById('limbo-section');
+    const limboSection = document.getElementById('limboSection');
     if (!limboSection) return;
 
     // Add revealed class
-    limboSection.classList.add('limbo-revealed');
+    limboSection.classList.add('revealed');
     
     // Smooth scroll to Limbo
     setTimeout(() => {
@@ -120,9 +120,9 @@ function initIndexPage() {
     if (progress.complete) {
         if (isLimboRevealed()) {
             // Already revealed, show immediately
-            const limboSection = document.getElementById('limbo-section');
+            const limboSection = document.getElementById('limboSection');
             if (limboSection) {
-                limboSection.classList.add('limbo-revealed');
+                limboSection.classList.add('revealed');
             }
         } else {
             // Start 7-second timer
@@ -136,7 +136,7 @@ function initIndexPage() {
 
 // Update progress indicator UI
 function updateProgressIndicator(progress) {
-    const indicator = document.getElementById('progress-indicator');
+    const indicator = document.querySelector('.reading-progress');
     if (!indicator) return;
 
     indicator.textContent = `Reading Progress: ${progress.progress}`;
